@@ -1,7 +1,34 @@
 main {
 
-margin:  5vh auto;
+    margin: 5vh auto;
     border: 2px solid black;
-    width:   80vw;
-    height: 80vh;
+    width: 90vw;
+    min-height: 85vh;
+    background-color:rgba(95,76,76,0.7);
+
+
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+}
+
+.content-heading {
+    display: flex;
+    justify-content: left;
+    overflow: auto;
+    margin: 3vh 3vw;
+    text-decoration: underline;
+}
+.para-styling{
+    border: 1px solid black;
+    margin: 3vh 3vw;
+    padding: 1vh 1vw;
+    background-color: #c5aa6a;
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+    text-align: justify;
+    line-height: 3vh;
 }
