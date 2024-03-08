@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Css Lists</title>
     <link rel="stylesheet" href="nav.css">
-     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -14,32 +20,59 @@
         <ul>
             <li>Home</li>
             <li>About</li>
+            <li>Services</li>
             <li>Contact</li>
 
         </ul>
     </nav>
-     <main>
-
-
+    <!-- end of navbar -->
+    <!-- start of main content -->
+    <main>
+        <h2 class="heading">LANGUAGE</h2>
+        <!-- main content -->
+        <div class="content">
+            <h2 class="content-heading">What is a Language</h2>
+            <p class="para-styling">A language can be defined as a system of communication consisting of a set of
+                sounds, symbols, and rules used by humans for expressing thoughts, ideas, feelings, and information. It
+                encompasses spoken, written, and sometimes non-verbal forms of expression, allowing individuals to
+                convey meaning and understand one another within a particular community or culture. Languages typically
+                involve vocabulary (words), grammar (rules for constructing sentences), syntax (arrangement of words in
+                sentences), and semantics (meaning conveyed by words and sentences). Language is fundamental to human
+                interaction, culture, and cognition, serving as a means of communication, expression, and identity.</p>
+        </div>
 
 
 
 
     </main>
 
-    <script>
-        window.watsonAssistantChatOptions = {
-          integrationID: "cfc7743c-dd0b-4970-a8c1-aa172584f98d", // The ID of this integration.
-          region: "eu-gb", // The region your integration is hosted in.
-          serviceInstanceID: "8e5ab33e-543c-4d1e-b0e0-c4d5d5036bff", // The ID of your service instance.
-          onLoad: async (instance) => { await instance.render(); }
-        };
-        setTimeout(function(){
-          const t=document.createElement('script');
-          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-          document.head.appendChild(t);
+
+    <script>window.watsonAssistantChatOptions = {
+
+            integrationID: "cfc7743c-dd0b-4970-a8c1-aa172584f98d",
+            // The ID of this integration.
+            region: "eu-gb",
+            // The region your integration is hosted in.
+            serviceInstanceID: "8e5ab33e-543c-4d1e-b0e0-c4d5d5036bff",
+            // The ID of your service instance.
+            onLoad: async (instance) => {
+                await instance.render();
+            }
+        }
+
+            ;
+
+        setTimeout(function () {
+            const t = document.createElement('script');
+            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
         });
-      </script>
+    </script>
+
+
+
+
+
 </body>
 
 </html>
