@@ -1,0 +1,81 @@
+/* Resetting some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling Navbar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+    font-size: 24px;
+}
+
+.nav-links {
+    float: right;
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Styling Main Sections */
+.language-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.language-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.language-section p {
+    font-size: 18px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        float: none;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .language-section h2 {
+        font-size: 24px;
+    }
+
+    .language-section p {
+        font-size: 16px;
+    }
+}
